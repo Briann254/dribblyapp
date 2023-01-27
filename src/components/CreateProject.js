@@ -17,8 +17,8 @@ function CreateProject(props) {
   console.log(setPosts);
 
   return (
-    <div >
-      <form onSubmit={handleSubmit} id='createProject'>
+    <div id='createProject'>
+      <form onSubmit={handleSubmit} >
         <input
         className="create-title"
           type="text"
