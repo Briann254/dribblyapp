@@ -17,10 +17,10 @@ const Login = () => {
   };
   return (
     <>
-        <section>
+        <section id="log-in">
           <p>{user.name}</p>
-          <h1> Sign In</h1>
-          <form onSubmit={handleSubmit}>
+          <h1 id="sign"> Sign In</h1>
+          <form onSubmit={handleSubmit} id='sign-in'>
             <label htmlFor="username">Username</label>
             <input
               type="text"
@@ -29,6 +29,7 @@ const Login = () => {
               onChange={(e) => setSignUp({...signUp, name: e.target.value })}
               required
             />
+              <label htmlFor="email">Enter email</label>
             <input
               type="email"
               id=""
@@ -44,7 +45,7 @@ const Login = () => {
               onChange={(e) => setSignUp({...signUp, password: e.target.value })}
               required
             />
-            <label htmlFor="username">Username</label>
+          
             <Link to="/yourprojects">
             <button type="submit">Sign in</button> 
             </Link>
